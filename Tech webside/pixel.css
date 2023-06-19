@@ -1,0 +1,87 @@
+.pixel{
+    /*border: 2px solid red;*/
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    
+    
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+.pixels{
+display: grid;
+grid-template-columns: auto auto auto ;
+margin: 10px;
+padding: 10px;
+
+}
+.img{
+    width: 160px;
+    height: 212px;
+    /*margin-left: 45px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.img1{
+    width: 200px;
+}
+.title{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    color: rgb(88, 71, 71);
+}
+.name{
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.navbar{
+    /*border: 2px solid red;*/
+    display: flex;
+    }
+.logo{
+    height: 50px;
+    width:50px;
+    padding: 10px;   
+}
+.ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+.li{
+    /*border: 2px solid rgb(236, 108, 108);*/
+    padding: 10px;
+    margin-left: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: large;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(77, 72, 72);
+    font-weight: bold;
+}
+/*.li:hover{
+    background-color: rgb(184, 174, 174);
+    border-radius: 5px;
+}*/
+
+    

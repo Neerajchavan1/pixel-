@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Brand Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+             background-color: black;
+            /*background-image: url(/images/pexels-andrea-piacquadio-3756042.jpg);
+            background-size: cover;*/
+        }
+        header::before{
+            background: url(/images/pexels-andrea-piacquadio-3756042.jpg) no-repeat center center/cover ;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1400px;
+            opacity: 0.3;
+            z-index: -1;
+            /*background-attachment: fixed;*/
+
+        }
+
+        .brands {
+            display: grid;
+            grid-template-columns: auto auto ;
+            /*grid-template-columns: auto;*/
+            /*border: 2px solid rgb(245, 76, 76);*/
+            padding: 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        .navbar ul {
+            display: flex;
+            position: absolute;
+            margin-top: 0px;
+        }
+
+        .navbar li {
+            display: block;
+            padding: 10px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration-line: none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+
+        }
+
+        .navbar ul li a:hover {
+            /*background-color: rgb(148, 132, 132);*/
+            text-decoration-line: underline;
+            font-weight: bold;
+
+        }
+
+        .navbar {
+            /*border: 2px solid salmon;
+         */
+            background-color: black;
+            height: 50px;
+            border-radius: 20px;
+
+        }
+
+        .brand {
+            /*border: 2px solid blue;*/
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            /*box-shadow: 4px 4px 4px rgb(255, 214, 138);*/
+            box-shadow: 0 4px 8px 0 rgba(255, 213, 159, 0.911), 0 6px 20px 0 rgba(255, 221, 157, 0.897);
+            width: 600px;
+            height: 600px;
+        }
+
+
+
+        .slogan {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-shadow: 5px 5px 5px grey;
+
+        }
+
+        .logo {
+            width: 150px;
+            height: 100px;
+            box-shadow: 0 4px 8px 0 rgba(241, 145, 20, 0.911), 0 6px 20px 0 rgba(245, 167, 23, 0.897);
+            
+
+
+        }
+
+        .logo:hover {
+            /*opacity: 0.5;*/
+            transform: scale(1.1);
+
+        }
+
+        .intro {
+            font-family: 'Oswald', sans-serif;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            height: 150px;
+            
+
+        }
+
+        #Adidaslogo {
+            width: 150px;
+            height: 150px;
+        }
+
+        #polologo {
+            width: 150px;
+            height: 150px;
+        }
+        .name{
+            text-shadow: 4px 4px 4px gray;
+        }
+        .wiki:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/Tech webside/brand.html">Home</a></li>
+                <li><a href="/Tech webside/About Us.html">About</a></li>
+                <li><a href="/Tech webside/contactus1.html">Contact us</a></li>
+                <li><a href="/Tech webside/morebrands.html">More Brands</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="slogan">
+        <h1>Know your Sports Brands</h1>
+    </section>
+    <hr>
+    <div class="brands">
+        <div class="brand" id="brands1">
+            <h2 class="name">1.Puma</h2>
+            <img class="logo" id="Pumalogo" src="/images/Puma-logo.png" alt="loading">
+            <p class="intro">Puma SE, branded as PUMA, is a German multinational corporation that designs and
+                manufactures athletic and casual footwear, apparel and accessories, which is headquartered in
+                Herzogenaurach, Bavaria, Germany. Puma is the third largest sportswear manufacturer in the world.[5] The
+                company was founded in 1948 by Rudolf Dassler (1898–1974). In 1924, Rudolf and his brother Adolf "Adi"
+                Dassler had jointly formed the company Gebrüder Dassler Schuhfabrik ('Dassler Brothers Shoe Factory').
+                The relationship between the two brothers deteriorated until they agreed to split in 1948, forming two
+                separate entities, Adidas and Puma. <br>
+                <a class="wiki" href="https://en.wikipedia.org/wiki/Puma_(brand)">read more on wikipedia</a>
+            </p>
+        </div>
+        <div class="brand" id="brands2">
+            <h2 class="name">2.Nike</h2>
+            <img class="logo" id="nikelogo" src="/images/423-4233149_image-nike-logo-png-white.png" alt="loading">
+            <p class="intro">Nike, Inc.[note 1] is an American multinational corporation that is engaged in the design,
+                development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment,
+                accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland
+                metropolitan area.[4] It is the world's largest supplier of athletic shoes and apparel and a major
+                manufacturer of sports equipment, with revenue in excess of US$46 billion in its fiscal year 2022.The
+                company was founded on January 25, 1964, as "Blue Ribbon Sports", by Bill Bowerman and Phil Knight, and
+                officially became Nike, Inc. on May 30, 1971. The company takes its name from Nike, the Greek goddess of
+                victory.[7] Nike markets its products under its own brand, as well as Nike Golf, Nike Pro, Nike+, Air
+                Jordan, Nike Blazers, Air Force 1, Nike Dunk, Air Max, Foamposite, Nike Skateboarding, Nike CR7,[8] and
+                subsidiaries including Air Jordan and Converse. <br>
+                <a class="wiki" href="https://en.wikipedia.org/wiki/Nike,_Inc.">read more on wikipedia</a>
+            </p>
+        </div>
+        <div class="brand" id="brands3">
+            <h2 class="name">3.Adidas</h2>
+            <img class="logo" id="Adidaslogo" src="/images/Adidas-White-Logo-PNG-Clipart-Background.png" alt="loading">
+            <p class="intro">Adidas AG (German: [ˈʔadiˌdas] (listen))[4] is a German multinational corporation, founded
+                and headquartered in Herzogenaurach, Bavaria, that designs and manufactures shoes, clothing and
+                accessories. It is the largest sportswear manufacturer in Europe, and the second largest in the world,
+                after Nike.[5][6] It is the holding company for the Adidas Group, which consists 8.33% stake of the
+                football club Bayern München,[7] and Runtastic, an Austrian fitness technology company. Adidas's revenue
+                for 2018 was listed at €21.915 billion.[3]The company was started by Adolf Dassler in his mother's
+                house; he was joined by his elder brother Rudolf in 1924 under the name Gebrüder Dassler Schuhfabrik
+                ("Dassler Brothers Shoe Factory"). Dassler assisted in the development of spiked running shoes (spikes)
+                for multiple athletic events. To enhance the quality of spiked athletic footwear, he transitioned from a
+                previous model of heavy metal spikes to utilising canvas and rubber. Dassler persuaded U.S. sprinter
+                Jesse Owens to use his handmade spikes at the 1936 Summer Olympics. In 1949, following a breakdown in
+                the relationship between the brothers, Adolf created Adidas and Rudolf established Puma, which became
+                Adidas's business rival.[1] <br>
+                <a class="wiki" href="https://en.wikipedia.org/wiki/Adidas">read more on wikipedia</a>
+            </p>
+        </div>
+        <div class="brand" id="brands4">
+            <h2 class="name">4.Us polo</h2>
+            <img class="logo" id="polologo" src="/images/uspolo_logo.png" alt="loading">
+            <p class="intro">Established in 1890, by David Grubbs the USPA provides resources to over 4,500 individual
+                members[1] and 250 polo clubs[2] across the U.S. and Canada, including promoting the game of polo,
+                coordinating the activities of its member clubs and registered players, arranging and supervising polo
+                tournaments, competitions and games and providing rules, handicaps and conditions for those tournaments,
+                competitions and games, including the safety and welfare of participants and mounts. The first chairman
+                of the USPA was H.L. Herbert (1890-1921). The first chief executive officer was Peter J. Rizzo
+                (2011-2015). The USPA has established a number of programs for new players to learn the sport in the
+                U.S. including Regional Polo Centers and clubs that host schools and lessons across the country. In
+                2010, the USPA created Team USPA,[3] a program to enhance and grow the sport of polo in the U.S. by
+                identifying young, talented American players and providing mentored training and playing opportunities
+                leading to a pool of higher rated amateur and professional players. The organization also coordinates
+                youth polo programs and competitions through Interscholastic/Intercollegiate polo [4] and Pony Club. <br>
+                <a class="wiki" href="https://en.wikipedia.org/wiki/United_States_Polo_Association">read more on wikipedia</a>
+            </p>
+        </div>
+    </div>
+</body>  
+
+</html>

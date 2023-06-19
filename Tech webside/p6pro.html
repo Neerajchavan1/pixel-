@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixel 6 pro specs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+         body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .list{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(253, 238, 235);
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 350px;
+    height: 450px;
+    list-style: none; 
+    display: inline-block;
+       } 
+       .specs{
+        margin: 10px;
+        padding: 10px;
+       }
+       .strong{
+        margin-right: 12px;
+       }
+       * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      width: 700px;
+      position: absolute;
+      margin: auto;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 70px;
+      
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: rgb(100, 94, 94);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+   
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    
+
+   
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+    .img{
+      width: 600px;
+      height: 350px;
+      margin: auto;
+      padding: auto;
+      margin-left: 50px;
+    }
+    .dots{
+      text-align:center;
+      margin-left: 250px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="title"><h2>pixel 6 pro Specifications</h2></div>
+    <ul class="list">
+        <li class="specs" ><strong class="strong">Display:</strong>6.7-inch, QHD+</li>
+        <li class="specs"><strong class="strong">SOC:</strong>Google Tensor</li>
+        <li class="specs"><strong class="strong">Camera:</strong>50, 12, and 48MP</li>
+        <li class="specs"><strong class="strong">Front camera</strong>: 11.1MP</li>
+        <li class="specs"><strong class="strong">Storage:</strong>128, 256, or 512GB/li>
+        <li class="specs"><strong class="strong">RAM:</strong> 12GB</li>
+        <li class="specs"><strong class="strong">Battery:</strong>5,000mAh</li>
+        <li class="specs"><strong class="strong">Software:</strong> Android 12</li>
+        <li class="specs"><strong class="strong">Status:</strong>Available</li>
+    </ul>
+    <div class="slideshow-container">
+
+    
+        <div class="mySlides fade">
+          
+          <img class="img" src="/google pixels/p6pro1.jpg" >
+          
+        </div>
+    
+        <div class="mySlides fade">
+          
+          <img class="img" src="/google pixels/p6pro2.jpg" >
+          
+        </div>
+    
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+    
+      <div class="dots" >
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        
+      </div>
+</body>
+<script>
+      let slideIndex = 1;
+  showSlides(slideIndex);
+
+ 
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+</script>
+</html>
